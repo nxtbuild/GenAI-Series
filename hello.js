@@ -4,8 +4,6 @@ import { OpenAI } from "openai";
 const client = new OpenAI();
 
 async function main() {
-  // These api calls are stateless (Zero Shot) ye batana hai
-
   const response = await client.chat.completions.create({
     model: "gpt-4o-mini",
     messages: [
